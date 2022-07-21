@@ -1,6 +1,6 @@
 // Assignment code here
 
-//These variables represent the options for characters
+//These variables represent the options for characters in a string
 
 var lowerCase = "abcdefghijklmnopqrstupwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUPWXYZ";
@@ -8,9 +8,6 @@ var numbers = "1234567890";
 var special = "!#$%&'()*+,-./:;<=>?@[]^_`{}|~";
 
 console.log("Our lowercase options are " + lowerCase);
-
-//
-
 
 function promptUser() {
 
@@ -42,28 +39,47 @@ function promptUser() {
  console.log(passLength);
 
  //Password Length Determined
-
+//////////////////////////////
  //User parameter questions
 
  var lowCase = window.confirm('Include lowercase letters?');
  if (lowCase) {
-  console.log("yes to lowcase");
+  lowCase = true;
+ }
+ else {
+  lowCase = false;
  }
 
  var upCase = window.confirm('Include uppercase letters?');
  if (upCase) {
-  console.log("yes to upper");
+  upCase = true;
+ }
+ else {
+  upCase = false;
  }
 
  var nums = window.confirm('Include numbers?');
  if (nums) {
-  console.log("yes to numbers");
+  nums = true;
+ }
+ else {
+  nums = false;
  }
 
  var specials = window.confirm('Include special characters?');
  if (specials) {
-  console.log("yes to special");
+  specials = true;
  }
+ else {
+  specials = false;
+ }
+
+ console.log(specials);
+ console.log(nums);
+
+ //TO DO, take results to determine what strings to combine.
+ //Set the combination to be the number the user chose using concat
+ //Display result on screen
   
 }
 
