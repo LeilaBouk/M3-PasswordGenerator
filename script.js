@@ -1,5 +1,11 @@
 // Assignment code here
 
+var lowerCase = "abcdefghijklmnopqrstupwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUPWXYZ";
+var numbers = "1234567890";
+var special = "!#$%&'()*+,-./:;<=>?@[]^_`{}|~";
+
+console.log("Our lowercase options are " + lowerCase);
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
