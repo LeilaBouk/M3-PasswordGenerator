@@ -46,22 +46,22 @@ function promptUser() {
  //User parameter questions
 
  var lowCase = window.confirm('Include lowercase letters?');
- if (lowCase = true) {
+ if (lowCase) {
   console.log("yes to lowcase");
  }
 
  var upCase = window.confirm('Include uppercase letters?');
- if (upCase = true) {
+ if (upCase) {
   console.log("yes to upper");
  }
 
  var nums = window.confirm('Include numbers?');
- if (nums = true) {
+ if (nums) {
   console.log("yes to numbers");
  }
 
  var specials = window.confirm('Include special characters?');
- if (specials = true) {
+ if (specials) {
   console.log("yes to special");
  }
   
