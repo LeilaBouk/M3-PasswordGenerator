@@ -75,11 +75,26 @@ if (specials) {
 
 console.log(chosenPass);
 
- //TO DO, take results to determine what strings to combine.
- //Set the combination to be the number the user chose using concat
+//Randomize the chosenPass based on passLength
+
+var randomized = [];
+
+for (var i = 0; i < passLength; i++) {
+  
+  randomized.push (chosenPass[Math.floor(Math.random() * chosenPass.length)]);
+  
+}
+
+console.log(randomized);
+
+password = randomized;
+
+console.log(password);
+
  //Display result on screen
   
 }
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
