@@ -2,10 +2,10 @@
 
 //These variables represent the options for characters in a string
 
-var lowerCase = "abcdefghijklmnopqrstupwxyz";
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUPWXYZ";
-var numbers = "1234567890";
-var special = "!#$%&'()*+,-./:;<=>?@[]^_`{}|~";
+const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+const special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "}", "|", "~"];
 
 console.log("Our lowercase options are " + lowerCase);
 
@@ -42,40 +42,38 @@ function promptUser() {
 //////////////////////////////
  //User parameter questions
 
- var lowCase = window.confirm('Include lowercase letters?');
- if (lowCase) {
-  lowCase = true;
- }
- else {
-  lowCase = false;
- }
+//  LOWERCASE
+ var lowCase = confirm('Include lowercase letters?');
 
- var upCase = window.confirm('Include uppercase letters?');
- if (upCase) {
-  upCase = true;
- }
- else {
-  upCase = false;
- }
+//  UPPERCASE
+ var upCase = confirm('Include uppercase letters?');
 
- var nums = window.confirm('Include numbers?');
- if (nums) {
-  nums = true;
- }
- else {
-  nums = false;
- }
+//  NUMBERS
+ var nums = confirm('Include numbers?');
 
- var specials = window.confirm('Include special characters?');
- if (specials) {
-  specials = true;
- }
- else {
-  specials = false;
- }
+//  SPECIAL CHARACTERS
+ var specials = confirm('Include special characters?');
 
  console.log(specials);
  console.log(nums);
+
+ //Take the selected values and combine them based on user selects
+var chosenPass = [];
+
+if (lowCase) {
+  chosenPass = chosenPass.concat(lowerCase);
+} 
+if (upCase) {
+  chosenPass = chosenPass.concat(upperCase);
+}
+if (nums) {
+  chosenPass = chosenPass.concat(numbers);
+}
+if (specials) {
+  chosenPass = chosenPass.concat(special);
+}
+
+console.log(chosenPass);
 
  //TO DO, take results to determine what strings to combine.
  //Set the combination to be the number the user chose using concat
