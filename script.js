@@ -9,7 +9,7 @@ const special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", "."
 
 console.log("Our lowercase options are " + lowerCase);
 
-function promptUser() {
+function generatePassword() {
 
   var passLength = window.prompt('How many characters would you like in your password? Please choose a number between 8 and 128 🤔');
 
@@ -91,17 +91,18 @@ password = randomized;
 
 console.log(password);
 
- //Display result on screen
+//Display result on screen
+return randomized.join("");
   
 }
 
+// VVVV Starter Code VVVVV
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  promptUser();
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
