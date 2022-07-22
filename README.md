@@ -6,7 +6,7 @@
 
 ## Deployed website link 🤖
 
-
+https://leilabouk.github.io/M3-PasswordGenerator/
 
 ## About this project 🐊
 
@@ -18,5 +18,5 @@ HTML + CSS + JavaScript
 ## Usage 🐗
 
 Use this page to randomly generate a password! 
-You can choose a length anywhere between 8 and 128.
-You can choose wether to include lowercase letters, uppercase, numbers, or special characters. 
+You can choose a length anywhere between 8 and 128 characters.
+You can choose whether to include lowercase letters, uppercase, numbers, or special characters. 
